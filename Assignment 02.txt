@@ -1,0 +1,193 @@
+//Task 1
+import java.util.Scanner;
+public class ques_1{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter a number:");
+                         int num=sc.nextInt();
+                         if(num%5==0 && num%7==0){
+                                 System.out.println("Invalid: Divisible by both");
+                             }
+                         else if(num%5==0 && num%7!=0){
+                                 System.out.println("Divisible by 5 Only");
+                         }
+                         else if(num%7==0 && num%5!=0){
+                                 System.out.println("Divisible by 7 Only");
+                         }
+                         else{
+                                     System.out.println("No");
+                         }
+    }
+}
+
+//Task 2
+import java.util.Scanner;
+public class ques_2{
+  public static void main(String[] args){
+    Scanner sc= new Scanner(System.in);
+    int base_rate=15;
+    System.out.print("enter your age:");
+    int age=sc.nextInt();
+    System.out.print("enter consumed electricity:");
+    int elec=sc.nextInt();
+    double bill;
+    if(age<18){
+      bill=((base_rate*elec)*0.80);
+        if(elec>100){
+        bill+=(bill*5/100);
+      }
+    }
+      else if(age>=18 && age<=60){
+        bill=(base_rate*elec);
+        if(elec>100){
+          bill+=(bill*5/100);
+        }
+      }
+      else if(age>60){
+           bill=((base_rate*elec)*0.90);
+           if(elec>100){
+             bill+=(bill*5/100);
+           }
+      }
+      System.out.println("Final bill:"+bill+" Tk");
+    }
+  }
+ 
+//Task 3
+import java.util.Scanner;
+public class ques_3{
+    public static void main(String[] args){
+         Scanner sc=new Scanner(System.in);
+         System.out.println("Enter three fractional numbers:");
+         float n1=sc.nextFloat();
+            float n2=sc.nextFloat();
+               float n3=sc.nextFloat();
+               float max,min;
+               if(n1>n2){
+                   if(n1>n3){
+                       max=n1;
+                       if(n2>n3){
+                           min=n3;
+                       }
+                       else{
+                           min=n2;
+                       }
+                   }
+                   else{
+                       max=n3;
+                       min=n2;
+               }
+               }
+               else{
+                   if(n2>n3){
+                       max=n2;
+                       if(n1>n3){
+                           min=n3;
+                       }
+                       else{
+                           min=n1;
+                       }
+                   }
+                   else{
+                       max=n3;
+                       min=n1;
+                   }
+               }
+               System.out.println("Maximum number is : "+max);
+               System.out.println("Minimum number is : "+min);
+               }
+    }
+} 
+
+//Task 4
+import java.util.Scanner;
+public class ques_4{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+            System.out.println("Enter the length of the sides of a traingle:");
+        System.out.print("Enter the first length:");
+        int len1=sc.nextInt();
+          System.out.print("Enter the second length:");
+        int len2=sc.nextInt();
+          System.out.print("Enter the third length:");
+        int len3=sc.nextInt();
+        if(len1==len2 && len2==len3 && len1==len3){
+            System.out.println("This is a Equilateral triangle!");
+        }
+        else if((len1==len2 && len1!=len3) ||(len2==len3 && len2!=len1)||(len3==len1 && len3!=len2)){
+            System.out.println("This is an Isosceles triangle");
+        }
+                else{
+                    System.out.println("This is a Scalene triangle");
+                }
+                
+                }
+}
+
+//Task 5
+import java.util.Scanner;
+public class ques_5{
+  public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    System.out.print("Enter the amount the customer need to pay(Taka): ");
+    int req_money = sc.nextInt();
+    System.out.print("Enter the amount, customer gave(Taka) : ");
+    int paid_money = sc.nextInt();
+    if(req_money<paid_money){
+    int leftout=paid_money-req_money;
+    int tk_note_100 =(leftout/100);
+    int tk_note_50 =(leftout%100/50);
+    int tk_note_20 = (leftout%100%50/20);
+    int tk_note_10 = (leftout%100%50%20/10);
+    int coin_5tk= (leftout%100%50%20%10/5);
+    int coin_2tk= (leftout%100%50%20%10%5/2);
+    int coin_1tk = (leftout%100%50%20%10%5%2);
+    System.out.println("The returned amount is "+leftout+" taka.");
+    System.out.println("100 taka note: "+tk_note_100);
+    System.out.println("50 taka note: "+tk_note_50);
+    System.out.println("20 taka note: "+tk_note_20);
+    System.out.println("10 taka note: "+tk_note_10);
+    System.out.println("5 taka coin: "+coin_5tk);
+    System.out.println("2 taka coin: "+coin_2tk);
+    System.out.println("1 taka coin: "+coin_1tk);    
+    }
+    else if(req_money==paid_money){
+        System.out.println("The returned amount is 0 taka.");
+    }
+    else{
+        System.out.println("Please pay "+(req_money-paid_money) +"taka more.");
+    }
+  }
+}
+
+//Task 6
+import java.util.Scanner;
+public class ques_6{
+    public static void main(String[] args){
+          Scanner sc=new Scanner(System.in);
+          System.out.print("Enter three numbers:");
+          int num1=sc.nextInt();
+          int num2=sc.nextInt();
+          int num3=sc.nextInt();
+          if(num1!=num2 && num2!=num3 && num3!=num1){
+              System.out.println("All numbers are different");
+          }
+          else if(num1==num2 && num2==num3 && num3==num1){
+            System.out.println("All numbers are equal");
+          }
+          else{
+             System.out.println("Neither all are equal or different");
+          }
+    }
+}
+
+
+
+                
+               
+                
+        
+        
+                            
+    
+                                 
