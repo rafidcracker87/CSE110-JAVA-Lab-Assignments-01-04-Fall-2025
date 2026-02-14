@@ -13,6 +13,8 @@ public class task_1{
   }
 }
 
+
+
 //Task 2
 import java.util.Scanner;
 public class task_2{
@@ -43,6 +45,8 @@ public class task_2{
       }
   }
 }
+
+
 
 //Task 3
 import java.util.Scanner;
@@ -81,6 +85,8 @@ public class task_3{
     }
 }
 
+
+
 //Task 4
 import java.util.Scanner;
 public class task_4{
@@ -99,6 +105,8 @@ public class task_4{
            }
        }
     }
+
+
 
 //Task 5
 import java.util.Scanner;
@@ -147,6 +155,8 @@ public class task_5{
     }
 }
 
+
+
 //Task 6
 import java.util.Scanner;
 public class task_6{
@@ -189,6 +199,8 @@ public class task_6{
     }
 }
 
+
+
 //Task 7
 import java.util.Scanner;
 public class ques_03_07{
@@ -208,6 +220,8 @@ public class ques_03_07{
        System.out.print(sum);
     }
 }
+
+
 
 //Task 8
 import java.util.Scanner;
@@ -232,4 +246,5 @@ public class task_8{
           System.out.println(neg+" Negative Numbers");
     }
 }
+
                            
