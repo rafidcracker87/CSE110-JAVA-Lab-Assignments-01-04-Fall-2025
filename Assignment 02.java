@@ -20,6 +20,8 @@ public class ques_1{
     }
 }
 
+
+
 //Task 2
 import java.util.Scanner;
 public class ques_2{
@@ -52,6 +54,8 @@ public class ques_2{
       System.out.println("Final bill:"+bill+" Tk");
     }
   }
+
+
  
 //Task 3
 import java.util.Scanner;
@@ -97,7 +101,9 @@ public class ques_3{
                System.out.println("Minimum number is : "+min);
                }
     }
-} 
+}
+
+
 
 //Task 4
 import java.util.Scanner;
@@ -123,6 +129,8 @@ public class ques_4{
                 
                 }
 }
+
+
 
 //Task 5
 import java.util.Scanner;
@@ -160,6 +168,8 @@ public class ques_5{
   }
 }
 
+
+
 //Task 6
 import java.util.Scanner;
 public class ques_6{
@@ -191,3 +201,4 @@ public class ques_6{
                             
     
                                  
+
